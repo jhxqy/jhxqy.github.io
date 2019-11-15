@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ 
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+ 
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>什么情况下会合成构造函数</title>
+</head>
+<body>
+        <div class="container">
+                <div class="row clearfix">
+                    <div class="col-md-12 column">
+                        <p>
+                            <h1>构造函数</h1>
+<blockquote>
+<p>编译器只在有必要的情况下合成构造函数，而并非任何情况</p>
+
+
+</blockquote>
+
+<ul>
+<li>基类存在构造函数</li>
+<li>成员对象初始化需要执行构造函数</li>
+<li>存在虚函数</li>
+<li>存在虚基类</li>
+</ul>
+
+<h3>合成拷贝构造函数的情况</h3>
+
+<ul>
+<li>成员对象需要拷贝构造函数</li>
+<li>基类存在一个拷贝构造函数</li>
+<li>存在虚函数</li>
+<li>存在虚基类</li>
+</ul>
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+</body>
+</html>
